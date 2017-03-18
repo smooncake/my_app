@@ -9,7 +9,479 @@
   </head>
 
   <body>
-  	<h1>My App</h1>
-    <%= yield %>
+<!--     <%= image_tag("loading.gif") %>
+<header>
+<div id="toggle">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+</div>
+<nav>
+  <ul>
+    <li class="l1"><a href="#Patty Hsu"><img src="images/nav01.png" alt="Home"/><span>Home</span></a></li>
+    <li class="l2"><a href="#Web"><img src="images/nav02.png" alt="Web Design"/><span>Web</span></a></li>
+    <li class="l3"><a href="#Graphic"><img src="images/nav03.png" alt="Graphic Design"/><span>Graphic</span></a></li>
+    <li class="l4"><a href="#Contact"><img src="images/nav04.png" alt="Contact"/><span>Contact</span></a></li>
+  </ul>
+</nav>
+</header><!--HEADER END--> -->
+
+<footer>Copyright© 2017 Patty Hsu. All Rights Reserved. </footer><!--FOOTER END-->
+
+<div id="fullpage">
+  <!-- SECTION01 -->
+  <div class="section background" id="section0">
+    <div id="wrapper">
+        <ul id="scene" class="scene border fill">
+          <span class="scene_desktop">
+          <% ["0.10", "0.20", "0.25", "0.50", "0.20", "0.35", "0.15", "0.55", "0.60", "1.00", "0.10"].each_with_index do |depth, i| %>
+
+            <li class="layer l<%= i + 1 %>" data-depth="<%= depth %>"><%= image_tag("love#{i+1}.png") %></li>
+          <% end %>
+        </ul>
+    </div>
+  </div><!--END SECTION01-->
+
+  <!-- SECTION02 -->
+  <div class="section" id="section1">
+    <div id="wrapper">
+      <h2>Web Design</h2>
+    <div class="profolio" id="slimScrollDiv">
+        <ul>
+          <li><a class="inline" href="#profolioModal01" data-toggle="modal"><img src="images/img01.jpg" alt="琉璃工房"><span>琉璃工房</span></a></li>
+          <li><a class="inline" href="#profolioModal02" data-toggle="modal"><img src="images/img02.jpg" alt="康霈生技"><span>康霈生技</span></a></li>
+          <li><a class="inline" href="#profolioModal03" data-toggle="modal"><img src="images/img03.jpg" alt="吉星酒棧"><span>吉星酒棧</span></a></li>
+          <li><a class="inline" href="#profolioModal04" data-toggle="modal"><img src="images/img04.jpg" alt="法律扶助基金會"><span>法律扶助基金會</span></a></li>
+          <li><a class="inline" href="#profolioModal06" data-toggle="modal"><img src="images/img06.jpg" alt="台灣鑽石"><span>台灣鑽石</span></a></li>
+          <li><a class="inline" href="#profolioModal07" data-toggle="modal"><img src="images/img07.jpg" alt="亞柏EZ購"><span>亞柏EZ購</span></a></li>
+          <li><a class="inline" href="#profolioModal09" data-toggle="modal"><img src="images/img09.jpg" alt="台灣福樂"><span>台灣福樂</span></a></li>
+          <li><a class="inline" href="#profolioModal12" data-toggle="modal"><img src="images/img12.jpg" alt="2106解密科技"><span>2106解密科技</span></a></li>
+          <li><a class="inline" href="#profolioModal13" data-toggle="modal"><img src="images/img13.jpg" alt="統一佳佳 spamade"><span>統一佳佳 spamade</span></a></li>
+          <li><a class="inline" href="#profolioModal14" data-toggle="modal"><img src="images/img14.jpg" alt="KIRIN 刮刮樂"><span>KIRIN 刮刮樂</span></a></li>
+          <li><a class="inline" href="#profolioModal15" data-toggle="modal"><img src="images/img15.jpg" alt="溫泉美食嘉年華活動"><span>溫泉美食嘉年華活動</span></a></li>
+          <li><a class="inline" href="#profolioModal16" data-toggle="modal"><img src="images/img16.jpg" alt="瑪法達星座"><span>瑪法達星座</span></a></li>
+          <li><a class="inline" href="#profolioModal17" data-toggle="modal"><img src="images/img17.jpg" alt="淋巴癌衛教網"><span>淋巴癌衛教網</span></a></li>
+          <li><a class="inline" href="#profolioModal18" data-toggle="modal"><img src="images/img18.jpg" alt="愛的榖粒"><span>愛的榖粒</span></a></li>
+          <li><a class="inline" href="#profolioModal19" data-toggle="modal"><img src="images/img19.jpg" alt="美感教育"><span>美感教育</span></a></li>
+          <li><a class="inline" href="#profolioModal20" data-toggle="modal"><img src="images/img20.jpg" alt="湯森路透理柏基金獎"><span>湯森路透理柏基金獎</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!--END SECTION02-->
+
+  <!-- SECTION03 -->
+  <div class="section" id="section2">
+    <div id="wrapper">
+      <h2>Graphic Design</h2>
+      <div class="profolio">
+        <ul>
+          <li><a class="inline" href="#graphicModal01" data-toggle="modal"><img src="images/img21.jpg" alt="月亮咬一口 延伸設計"><span>月亮咬一口 延伸設計</span></a></li>
+          <li><a class="inline" href="#graphicModal02" data-toggle="modal"><img src="images/img22.jpg" alt="空海拉麵 延伸設計"><span>空海拉麵 延伸設計</span></a></li>
+          <li><a class="inline" href="#graphicModal03" data-toggle="modal"><img src="images/img23.jpg" alt="水的記憶音樂會"><span>水的記憶音樂會</span></a></li>
+          <li><a class="inline" href="#graphicModal04" data-toggle="modal"><img src="images/img24.jpg" alt="鳶麵屋 延伸設計"><span>鳶麵屋 延伸設計</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!--END SECTION03-->
+
+  <!-- SECTION04 -->
+  <div class="section" id="section3">
+    <div id="wrapper">
+      <h2>Contact Me</h2>
+      <ul class="contact">
+        <li class="c1"><img src="images/contact01.png" alt="電話"/><br/>Patty Hsu</a></li>
+        <li class="c2"><img src="images/contact03.png" alt="地址"/><br/>09**-338184</span>
+        </li>
+        <li class="c3"><a href="mailto:smooncake@gmail.com"><img src="images/contact02.png" alt="信箱"/><br/>smooncake@gmail.com</a></li>
+      </ul>
+    </div>
+  </div><!--END SECTION04-->
+</div><!--END FULLPAGE-->
+
+<!-- profolioModal20 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal20" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">湯森路透理柏台灣基金獎</div>
+        <img src="images/201612201417_reuters/001.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal19 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal19" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">美感教育</div>
+        <img src="images/201611141024_beauty/001.jpg" alt="">
+        <img src="images/201611141024_beauty/002.jpg" alt="">
+        <img src="images/201611141024_beauty/003.jpg" alt="">
+        <img src="images/201611141024_beauty/004.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://www.moearteducation.com">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal18 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal18" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">愛的榖粒</div>
+        <img src="images/201610201121_rice/001.jpg" alt="">
+        <img src="images/201610201121_rice/002.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal17 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal17" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">淋巴癌衛教網</div>
+        <img src="images/201609201901_08i/001.jpg" alt="">
+        <img src="images/201609201901_08i/002.jpg" alt="">
+        <img src="images/201609201901_08i/003.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://www.care08i.org.tw/">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal16 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal16" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">瑪法達星座</div>
+        <img src="images/201608241730_mafalda/001.jpg" alt="">
+        <img src="images/201608241730_mafalda/002.jpg" alt="">
+        <img src="images/201608241730_mafalda/003.jpg" alt="">
+        <img src="images/201608241730_mafalda/004.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal15 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal15" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">溫泉美食嘉年華活動</div>
+        <img src="images/201606061210_hotspring/001.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+
+<!-- profolioModal14 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal14" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">KIRIN 刮刮樂</div>
+        <img src="images/201605051244_kirin/001.jpg" alt="">
+        <img src="images/201605051244_kirin/002.jpg" alt="">
+        <img src="images/201605051244_kirin/003.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal13 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal13" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">統一佳佳 spamade</div>
+        <img src="images/201605051244_spamade/001.jpg" alt="">
+        <img src="images/201605051244_spamade/002.jpg" alt="">
+        <img src="images/201605051244_spamade/003.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://www.spamade.com.tw/index.php">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal12 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal12" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">2106解密科技</div>
+        <img src="images/201602221014_ttp/001.jpg" alt="">
+        <img src="images/201602221014_ttp/002.jpg" alt="">
+        <img src="images/201602221014_ttp/003.jpg" alt="">
+        <img src="images/201602221014_ttp/004.jpg" alt="">
+        <img src="images/201602221014_ttp/005.jpg" alt="">
+        <img src="images/201602221014_ttp/006.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://2016.meetbao.net/Kaohsiung/home.php">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal09 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal09" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">台灣福樂</div>
+        <img src="images/201510201754_freshdelight/001.jpg" alt="">
+        <img src="images/201510201754_freshdelight/002.jpg" alt="">
+        <img src="images/201510201754_freshdelight/003.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://www.freshdelight.com.tw/">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal07 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal07" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">亞柏EZ購</div>
+        <img src="images/201508170357_ez/001.jpg" alt="">
+        <img src="images/201508170357_ez/002.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal06 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal06" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">台灣鑽石</div>
+        <img src="images/20150626_tdc/001.jpg" alt="">
+        <img src="images/20150626_tdc/002.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal04 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal04" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">法律扶助基金會</div>
+        <img src="images/20150413_laf/001.jpg" alt="">
+        <img src="images/20150413_laf/002.jpg" alt="">
+        <img src="images/20150413_laf/003.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://www.laf.org.tw/">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal03 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal03" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">吉星酒棧</div>
+        <img src="images/20141114_luckystar/001.jpg" alt="">
+        <img src="images/20141114_luckystar/002.jpg" alt="">
+        <img src="images/20141114_luckystar/003.jpg" alt="">
+        <img src="images/20141114_luckystar/004.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://www.luckystarwine.com.tw/">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal02 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal02" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">康霈生技</div>
+        <img src="images/20140812_caliway/001.jpg" alt="">
+        <img src="images/20140812_caliway/002.jpg" alt="">
+        <img src="images/20140812_caliway/003.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://www.caliway.com.tw/">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- profolioModal01 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="profolioModal01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">琉璃工房</div>
+        <img src="images/20131111_liuli/001.jpg" alt="">
+        <img src="images/20131111_liuli/002.jpg" alt="">
+        <img src="images/20131111_liuli/003.jpg" alt="">
+        <span class="launch"><a target="_blanck" href="http://emall.liuli.com.tw/index.php?route=common/home">LAUNCH</a></span>
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+
+<!-- graphicModal04 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="graphicModal04" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">鳶麵屋 延伸設計</div>
+        <img src="images/2017_Kaito/001.jpg" alt="">
+        <img src="images/2017_Kaito/002.jpg" alt="">
+        <img src="images/2017_Kaito/003.jpg" alt="">
+        <img src="images/2017_Kaito/004.jpg" alt="">
+        <img src="images/2017_Kaito/005.jpg" alt="">
+        <img src="images/2017_Kaito/006.jpg" alt="">
+        <img src="images/2017_Kaito/007.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- graphicModal03 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="graphicModal03" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">水的記憶音樂會</div>
+        <img src="images/2016_water/001.jpg" alt="">
+        <img src="images/2016_water/002.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- graphicModal02 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="graphicModal02" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">空海拉麵 延伸設計</div>
+        <img src="images/2016_noodle/001.jpg" alt="">
+        <img src="images/2016_noodle/002.jpg" alt="">
+        <img src="images/2016_noodle/003.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- graphicModal01 -->
+<div class="modal fade bs-example-modal-lg profolioModa" id="graphicModal01" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+      <div class="modal-content">
+        <ul class="profolio_box">
+        <li class="profolio_content">
+        <div class="profolio_title">月亮咬一口 延伸設計</div>
+        <img src="images/2015_moon/001.jpg" alt="">
+        <img src="images/2015_moon/002.jpg" alt="">
+        <img src="images/2015_moon/003.jpg" alt="">
+        </li>
+        <li class="gotop"></li>
+      </ul>
+      </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/parallax.js"></script>
+<script>
+  $(function(){
+      $('#slimScrollDiv').slimscroll({
+      });
+
+    });
+  // Nothing new here...it's all in the CSS!
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
+</script>
   </body>
 </html>

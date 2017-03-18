@@ -11,6 +11,15 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+
+//= require jquery-1.11.1.min
+//= require bootstrap.min
+//= require jquery-ui.min
+//= require jquery.slimscroll
+//= require jquery.fullPage
+//= require velocity.min
+//= require velocity.ui.min
+//= require deer
