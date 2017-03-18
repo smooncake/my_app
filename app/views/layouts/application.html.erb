@@ -9,22 +9,7 @@
   </head>
 
   <body>
-<!--     <%= image_tag("loading.gif") %>
-<header>
-<div id="toggle">
-  <span class="one"></span>
-  <span class="two"></span>
-  <span class="three"></span>
-</div>
-<nav>
-  <ul>
-    <li class="l1"><a href="#Patty Hsu"><img src="images/nav01.png" alt="Home"/><span>Home</span></a></li>
-    <li class="l2"><a href="#Web"><img src="images/nav02.png" alt="Web Design"/><span>Web</span></a></li>
-    <li class="l3"><a href="#Graphic"><img src="images/nav03.png" alt="Graphic Design"/><span>Graphic</span></a></li>
-    <li class="l4"><a href="#Contact"><img src="images/nav04.png" alt="Contact"/><span>Contact</span></a></li>
-  </ul>
-</nav>
-</header><!--HEADER END--> -->
+</header> <!--HEADER END-->
 
 <footer>Copyright© 2017 Patty Hsu. All Rights Reserved. </footer><!--FOOTER END-->
 
@@ -35,8 +20,8 @@
         <ul id="scene" class="scene border fill">
           <span class="scene_desktop">
           <% ["0.10", "0.20", "0.25", "0.50", "0.20", "0.35", "0.15", "0.55", "0.60", "1.00", "0.10"].each_with_index do |depth, i| %>
-
-            <li class="layer l<%= i + 1 %>" data-depth="<%= depth %>"><%= image_tag("love#{i+1}.png") %></li>
+            <% index = (i + 1) %>
+            <li class="layer l<%= i + 1 %>" data-depth="<%= depth %>"><%= image_tag("love#{index.to_s.rjust(2, "0")}.png") unless index == 11 %></li>
           <% end %>
         </ul>
     </div>
@@ -48,22 +33,17 @@
       <h2>Web Design</h2>
     <div class="profolio" id="slimScrollDiv">
         <ul>
-          <li><a class="inline" href="#profolioModal01" data-toggle="modal"><img src="images/img01.jpg" alt="琉璃工房"><span>琉璃工房</span></a></li>
-          <li><a class="inline" href="#profolioModal02" data-toggle="modal"><img src="images/img02.jpg" alt="康霈生技"><span>康霈生技</span></a></li>
-          <li><a class="inline" href="#profolioModal03" data-toggle="modal"><img src="images/img03.jpg" alt="吉星酒棧"><span>吉星酒棧</span></a></li>
-          <li><a class="inline" href="#profolioModal04" data-toggle="modal"><img src="images/img04.jpg" alt="法律扶助基金會"><span>法律扶助基金會</span></a></li>
-          <li><a class="inline" href="#profolioModal06" data-toggle="modal"><img src="images/img06.jpg" alt="台灣鑽石"><span>台灣鑽石</span></a></li>
-          <li><a class="inline" href="#profolioModal07" data-toggle="modal"><img src="images/img07.jpg" alt="亞柏EZ購"><span>亞柏EZ購</span></a></li>
-          <li><a class="inline" href="#profolioModal09" data-toggle="modal"><img src="images/img09.jpg" alt="台灣福樂"><span>台灣福樂</span></a></li>
-          <li><a class="inline" href="#profolioModal12" data-toggle="modal"><img src="images/img12.jpg" alt="2106解密科技"><span>2106解密科技</span></a></li>
-          <li><a class="inline" href="#profolioModal13" data-toggle="modal"><img src="images/img13.jpg" alt="統一佳佳 spamade"><span>統一佳佳 spamade</span></a></li>
-          <li><a class="inline" href="#profolioModal14" data-toggle="modal"><img src="images/img14.jpg" alt="KIRIN 刮刮樂"><span>KIRIN 刮刮樂</span></a></li>
-          <li><a class="inline" href="#profolioModal15" data-toggle="modal"><img src="images/img15.jpg" alt="溫泉美食嘉年華活動"><span>溫泉美食嘉年華活動</span></a></li>
-          <li><a class="inline" href="#profolioModal16" data-toggle="modal"><img src="images/img16.jpg" alt="瑪法達星座"><span>瑪法達星座</span></a></li>
-          <li><a class="inline" href="#profolioModal17" data-toggle="modal"><img src="images/img17.jpg" alt="淋巴癌衛教網"><span>淋巴癌衛教網</span></a></li>
-          <li><a class="inline" href="#profolioModal18" data-toggle="modal"><img src="images/img18.jpg" alt="愛的榖粒"><span>愛的榖粒</span></a></li>
-          <li><a class="inline" href="#profolioModal19" data-toggle="modal"><img src="images/img19.jpg" alt="美感教育"><span>美感教育</span></a></li>
-          <li><a class="inline" href="#profolioModal20" data-toggle="modal"><img src="images/img20.jpg" alt="湯森路透理柏基金獎"><span>湯森路透理柏基金獎</span></a></li>
+          <li><a class="inline" href="#profolioModal01" data-toggle="modal"><%= image_tag("img01.jpg") %><span>琉璃工房</span></a></li>
+          <li><a class="inline" href="#profolioModal02" data-toggle="modal"><%= image_tag("img02.jpg") %><span>康霈生技</span></a></li>
+          <li><a class="inline" href="#profolioModal03" data-toggle="modal"><%= image_tag("img03.jpg") %><span>吉星酒棧</span></a></li>
+          <li><a class="inline" href="#profolioModal12" data-toggle="modal"><%= image_tag("img12.jpg") %><span>2106解密科技</span></a></li>
+          <li><a class="inline" href="#profolioModal13" data-toggle="modal"><%= image_tag("img13.jpg") %><span>統一佳佳 spamade</span></a></li>
+          <li><a class="inline" href="#profolioModal14" data-toggle="modal"><%= image_tag("img14.jpg") %><span>KIRIN 刮刮樂</span></a></li>
+          <li><a class="inline" href="#profolioModal15" data-toggle="modal"><%= image_tag("img15.jpg") %><span>溫泉美食嘉年華活動</span></a></li>
+          <li><a class="inline" href="#profolioModal16" data-toggle="modal"><%= image_tag("img16.jpg") %><span>瑪法達星座</span></a></li>
+          <li><a class="inline" href="#profolioModal17" data-toggle="modal"><%= image_tag("img17.jpg") %><span>淋巴癌衛教網</span></a></li>
+          <li><a class="inline" href="#profolioModal18" data-toggle="modal"><%= image_tag("img18.jpg") %><span>愛的榖粒</span></a></li>
+          <li><a class="inline" href="#profolioModal20" data-toggle="modal"><%= image_tag("img20.jpg") %><span>湯森路透理柏基金獎</span></a></li>
         </ul>
       </div>
     </div>
@@ -75,10 +55,7 @@
       <h2>Graphic Design</h2>
       <div class="profolio">
         <ul>
-          <li><a class="inline" href="#graphicModal01" data-toggle="modal"><img src="images/img21.jpg" alt="月亮咬一口 延伸設計"><span>月亮咬一口 延伸設計</span></a></li>
-          <li><a class="inline" href="#graphicModal02" data-toggle="modal"><img src="images/img22.jpg" alt="空海拉麵 延伸設計"><span>空海拉麵 延伸設計</span></a></li>
-          <li><a class="inline" href="#graphicModal03" data-toggle="modal"><img src="images/img23.jpg" alt="水的記憶音樂會"><span>水的記憶音樂會</span></a></li>
-          <li><a class="inline" href="#graphicModal04" data-toggle="modal"><img src="images/img24.jpg" alt="鳶麵屋 延伸設計"><span>鳶麵屋 延伸設計</span></a></li>
+          <li><a class="inline" href="#graphicModal03" data-toggle="modal"><%= image_tag("img23.jpg") %><span>水的記憶音樂會</span></a></li>
         </ul>
       </div>
     </div>
@@ -89,10 +66,10 @@
     <div id="wrapper">
       <h2>Contact Me</h2>
       <ul class="contact">
-        <li class="c1"><img src="images/contact01.png" alt="電話"/><br/>Patty Hsu</a></li>
-        <li class="c2"><img src="images/contact03.png" alt="地址"/><br/>09**-338184</span>
+        <li class="c1"><%= image_tag("contact01.png") %><br/>Patty Hsu</a></li>
+        <li class="c2"><%= image_tag("contact03.png") %><br/>09**-338184</span>
         </li>
-        <li class="c3"><a href="mailto:smooncake@gmail.com"><img src="images/contact02.png" alt="信箱"/><br/>smooncake@gmail.com</a></li>
+        <li class="c3"><a href="mailto:smooncake@gmail.com"><%= image_tag("contact02.png") %><br/>smooncake@gmail.com</a></li>
       </ul>
     </div>
   </div><!--END SECTION04-->
@@ -470,8 +447,6 @@
       </div>
   </div>
 </div>
-
-<!-- Scripts -->
 <script src="js/parallax.js"></script>
 <script>
   $(function(){
